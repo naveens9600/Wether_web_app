@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="input-con">
+      <input
+        type="text"
+        id="cityInput"
+        class="cityInput"
+        placeholder="Search City"
+      />
+      <div class="search-icon" onclick="searchWeather()">
+        <img src="./assets/search.png" alt="search icon">
+      </div>
+    </div>
+    <div id="weatherDetails">
+      <div class="image">
+        <img id="weatherIcon" src="./assets/clear.png" alt="Weather Icon" style="height: 250px; width: 90%;">
+      </div>
+      <div class="temp" id="temp">0°C</div>
+      <div class="location" id="city">Salem</div>
+      <div class="country" id="country">IN</div>
+      <div class="cord">
+        <div>
+          <span class="lat">Latitude</span>
+          <span id="lat">0</span>
+        </div>
+        <div>
+          <span class="lon">Longitude</span>
+          <span id="lon">0</span>
+        </div>
+      </div>
+      <div class="data-con">
+        <div class="element">
+          <img src="./assets/humunity.png" alt="Humidity" class="icon" style="height: 70px;">
+          <div class="data">
+            <div class="humidity-percent" id="humidity">0%</div>
+            <div class="text">Humidity</div>
+          </div>
+        </div>
+        <div class="element">
+          <img src="./assets/wind.png" alt="Wind" class="icon" style="height: 70px;">
+          <div class="data">
+            <div class="wind-percent" id="wind">0 Km/h</div>
+            <div class="text">Wind Speed</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
